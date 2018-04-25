@@ -23,6 +23,8 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="12.1250005" PointY="7.6634114583333339" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderDocument" Width="1.5" PointX="3" PointY="10.6153564453125" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderDocument_WorkOrder" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
