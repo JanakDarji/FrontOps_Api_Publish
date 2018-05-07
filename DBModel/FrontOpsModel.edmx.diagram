@@ -12,7 +12,6 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.EmployeeDetail" Width="1.5" PointX="9.8750005" PointY="8.4519856770833321" />
         <AssociationConnector Association="FrontOpsDBModel.FK_EmployeeDetail_State" />
         <EntityTypeShape EntityType="FrontOpsDBModel.SchedularQueue" Width="1.5" PointX="5.75" PointY="4.75" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.JobDetail" Width="1.5" PointX="8.375" PointY="0.75" />
         <EntityTypeShape EntityType="FrontOpsDBModel.Role" Width="1.5" PointX="3.375" PointY="7.75" />
         <EntityTypeShape EntityType="FrontOpsDBModel.AccessRole" Width="1.5" PointX="5.625" PointY="13.365397135416668" />
         <AssociationConnector Association="FrontOpsDBModel.FK_AccessRole_Role" />
@@ -46,6 +45,7 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetDaily" Width="1.5" PointX="18.3750005" PointY="12.21630859375" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.JobDetail" Width="1.5" PointX="8.375" PointY="0.75" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
