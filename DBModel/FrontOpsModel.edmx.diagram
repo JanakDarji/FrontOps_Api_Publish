@@ -42,10 +42,10 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetTrack" Width="1.5" PointX="15.375000499999999" PointY="12.177815755208332" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.JobDetail" Width="1.5" PointX="8.375" PointY="0.75" />
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetDaily" Width="1.5" PointX="18.3750005" PointY="12.21630859375" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.JobDetail" Width="1.5" PointX="8.375" PointY="0.75" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
