@@ -32,10 +32,6 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceDocument_Maintenance" />
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetTrack" Width="1.9629629445664687" PointX="14.072916718406807" PointY="6.5983798492377836" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_EmployeeDetail" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="2.125" PointX="2.3738429800687584" PointY="8.2326388647434889" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistFormVersion" Width="2.1221064567611911" PointX="16.738426951221108" PointY="4.0600767473713173" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistFormVersionTask" Width="2.0353009046549779" PointX="16.717015004441869" PointY="7.84366404419811" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormVersion_EmployeeDetail" />
@@ -64,7 +60,11 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetDaily" Width="1.5" PointX="14.1250005" PointY="0.75" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail1" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="20.1250005" PointY="8.3822021484375" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
