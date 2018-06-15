@@ -60,7 +60,7 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetDaily" Width="1.5" PointX="14.1250005" PointY="0.75" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail1" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="20.1250005" PointY="8.0673014322916643" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="20.1250005" PointY="8.5961507161458339" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
