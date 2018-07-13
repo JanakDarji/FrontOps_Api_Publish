@@ -69,6 +69,10 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
         <EntityTypeShape EntityType="FrontOpsDBModel.Notification" Width="1.5" PointX="3.375" PointY="12.75" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistDocument" Width="1.5" PointX="22.3750005" PointY="0.75" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_ChecklistForm" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_EmployeeDetail" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_WorkOrder" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
