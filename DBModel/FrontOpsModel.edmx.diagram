@@ -15,7 +15,6 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.Role" Width="1.5" PointX="6.7172769017368559" PointY="0.67192781405820479" />
         <EntityTypeShape EntityType="FrontOpsDBModel.AccessRole" Width="1.5" PointX="6.8547453215046819" PointY="2.6255791308473118" />
         <AssociationConnector Association="FrontOpsDBModel.FK_AccessRole_Role" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrder" Width="1.5" PointX="0.5" PointY="5.2667298293887708" />
         <EntityTypeShape EntityType="FrontOpsDBModel.State" Width="1.5" PointX="6.88715280709719" PointY="10.110532407982296" />
         <AssociationConnector Association="FrontOpsDBModel.FK_State_Country" />
         <AssociationConnector Association="FrontOpsDBModel.FK_EmployeeDetail_State1" />
@@ -23,7 +22,6 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.ActivityTracker" Width="1.5" PointX="4.8240744833960765" PointY="8.7233796008851066" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ActivityTracker_ActivityCategory" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ActivityTracker_EmployeeDetail" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_ActivityTracker_WorkOrder" />
         <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceDocument" Width="1.8906249844779577" PointX="9.0127318137681627" PointY="6.99652782261923" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceDocument_EmployeeDetail" />
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetTrack" Width="2" PointX="14.035394265922125" PointY="7.0842293871491062" />
@@ -34,11 +32,9 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormVersion_EmployeeDetail1" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormVersionTask_ChecklistFormVersion" />
         <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderDocument" Width="1.5" PointX="2.7612007167597348" PointY="5.4148746151147611" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderDocument_WorkOrder" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistFormUserTaskAnswer" Width="1.5" PointX="24.125000999999997" PointY="3.5768229166666643" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistFormWorkOrderAssignment" Width="1.5" PointX="19.6250005" PointY="3.995157877604167" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormWorkOrderAssignment_ChecklistFormVersion" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormWorkOrderAssignment_WorkOrder1" />
         <EntityTypeShape EntityType="FrontOpsDBModel.MaintenancePartType" Width="1.5" PointX="6.625" PointY="13.990361445312487" />
         <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceType" Width="1.5" PointX="9.375" PointY="11.174019322916655" />
         <EntityTypeShape EntityType="FrontOpsDBModel.JobDetail" Width="1.5" PointX="11.375" PointY="9.75" />
@@ -46,7 +42,6 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistForm" Width="1.5" PointX="17.1250005" PointY="0.75" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistFormWOAssignmentUser" Width="1.5" PointX="14.125" PointY="12.201863606770836" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistForm_EmployeeDetail" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistForm_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormVersion_ChecklistForm" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormWorkOrderAssignment_ChecklistForm" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormUserTaskAnswer_ChecklistFormWOAssignmentUser" />
@@ -55,24 +50,31 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_MaintenancePartType" />
         <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_MaintenanceType" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceDocument_Maintenance" />
         <EntityTypeShape EntityType="FrontOpsDBModel.TimesheetDaily" Width="1.5" PointX="22.3750005" PointY="6.7932942708333339" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail" />
         <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_EmployeeDetail1" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceAssignment" Width="1.5" PointX="25.3750005" PointY="6.5769042968750018" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="14.1250005" PointY="1.1634521484375009" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_Maintenance" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_WorkOrder" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
-        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
         <EntityTypeShape EntityType="FrontOpsDBModel.Notification" Width="1.5" PointX="3.375" PointY="12.75" />
         <EntityTypeShape EntityType="FrontOpsDBModel.ChecklistDocument" Width="1.5" PointX="22.3750005" PointY="0.75" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_ChecklistForm" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_EmployeeDetail" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.UserDevice" Width="1.5" PointX="14.125" PointY="15.922978632812484" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_UserDevice_EmployeeDetail" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceAssignment" Width="1.5" PointX="25.3750005" PointY="7.3846028645833339" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrderAssignment" Width="1.5" PointX="14.1250005" PointY="0.971150716145833" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_EmployeeDetail" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_Maintenance" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetDaily_WorkOrderAssignment" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_TimesheetTrack_WorkOrderAssignment" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.WorkOrder" Width="1.5" PointX="0.75" PointY="5.6779021354165415" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ActivityTracker_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistDocument_WorkOrder" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistForm_WorkOrder" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_ChecklistFormWorkOrderAssignment_WorkOrder1" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_WorkOrder" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_WorkOrder" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
+        <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderDocument_WorkOrder" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
