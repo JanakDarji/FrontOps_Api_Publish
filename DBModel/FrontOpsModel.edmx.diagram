@@ -72,8 +72,8 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_Maintenance_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderAssignment_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_WorkOrderDocument_WorkOrder" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceAssignment" Width="1.5" PointX="25.3750005" PointY="7.6923014322916679" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceTaskDocument" Width="1.5" PointX="27.6250005" PointY="9.0384114583333339" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceTaskDocument" Width="1.5" PointX="27.625" PointY="9.0961100260416661" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.MaintenanceAssignment" Width="1.5" PointX="25.3750005" PointY="8.3469178169070535" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_Maintenance" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceTaskDocument_MaintenanceAssignment" />
