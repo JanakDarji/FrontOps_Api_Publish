@@ -8,7 +8,6 @@
         <EntityTypeShape EntityType="FrontOpsDBModel.Division" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="FrontOpsDBModel.AuditTrail" Width="1.5" PointX="4.6212121429686368" PointY="0.68560606471106356" />
         <EntityTypeShape EntityType="FrontOpsDBModel.Country" Width="1.5" PointX="6.9230323458941294" PointY="7.79976862084902" />
-        <EntityTypeShape EntityType="FrontOpsDBModel.StagEmployeeDetail" Width="1.7459490643009366" PointX="2.6742424394309348" PointY="0.69318181941331913" />
         <EntityTypeShape EntityType="FrontOpsDBModel.EmployeeDetail" Width="1.9629629445664687" PointX="11.423032345894129" PointY="0.5138892062284206" />
         <AssociationConnector Association="FrontOpsDBModel.FK_EmployeeDetail_State" />
         <EntityTypeShape EntityType="FrontOpsDBModel.SchedularQueue" Width="1.7170138802655321" PointX="0.5" PointY="2.5922243767649338" />
@@ -77,6 +76,7 @@
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_Maintenance" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceAssignment_WorkOrder" />
         <AssociationConnector Association="FrontOpsDBModel.FK_MaintenanceTaskDocument_MaintenanceAssignment" />
+        <EntityTypeShape EntityType="FrontOpsDBModel.StagEmployeeDetail" Width="1.5" PointX="9.375" PointY="15.75" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
